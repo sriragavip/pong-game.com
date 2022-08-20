@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pong Game</title>
+        <link rel="icon" href="data:image/png;base64,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">
+    </head>
+    <body>
+      <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      canvas {
+        background: #F2D1D1;
+      }
+      </style>
+
+        <canvas></canvas>
+        <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>
